@@ -3,30 +3,22 @@ package com.online.mobile_shop;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.ContextMenu;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.Toast;
-import android.widget.Toolbar;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+public class SamsungActivity extends AppCompatActivity {
 
-public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_samsung);
         androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar); setSupportActionBar(toolbar);
-
-
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -48,7 +40,6 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.profile_bar:
                 setContentView(R.layout.activity_profile);
                 return true;
-
             case R.id.logout:
                 finish();
                 return true;
@@ -68,7 +59,10 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),MyOrderActivity.class);
         startActivity(intent);
     }
-
+    public void goToAll(View view) {
+        Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
+        startActivity(intent);
+    }
     public void goToIphoneCat(View view) {
         Intent intent = new Intent(getApplicationContext(),Cat_iphoneActivity.class);
         startActivity(intent);
@@ -94,14 +88,8 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),ProfileActivity.class);
         startActivity(intent);
     }
-
-
     public void myCart(View view) {
         Intent intent = new Intent(getApplicationContext(),CartActivity.class);
-        startActivity(intent);
-    }
-    public void showDetails(View view) {
-        Intent intent = new Intent(getApplicationContext(),DetailsActivity.class);
         startActivity(intent);
     }
     public void goToHome(MenuItem item) {
@@ -109,3 +97,5 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
+
+

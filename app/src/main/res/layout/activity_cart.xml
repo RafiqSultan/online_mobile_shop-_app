@@ -4,37 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
     android:layout_height="match_parent"
     tools:context=".CartActivity">
-
-    <!--    left icon -->
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="wrap_content"
+        android:background="@color/warm_red"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_bar"
+        app:title="Checkout"
+        app:titleTextColor="@color/white"/>
+    <!--    left icon -->
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/outline_arrow_circle_left_24"
-            app:tint="@color/warm_red"
-            android:layout_marginTop="15dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Checkout:"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:textColor="@color/warm_red"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="100dp"/>
-
-    </LinearLayout>
 
     <!--    Cart-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_height="100dp"
         >
         <LinearLayout
@@ -48,7 +41,7 @@
                 android:src="@drawable/iph_13" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:text="Iphone 13 pro max"
                 android:textSize="15dp"
@@ -98,7 +91,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="-10dp"
                 android:gravity="center_horizontal"
                 app:tint="@color/warm_red"
                 android:src="@drawable/outline_delete_24" />
@@ -108,6 +101,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_height="100dp"
         >
         <LinearLayout
@@ -118,12 +113,12 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="80dp"
-                android:src="@drawable/iph_13" />
+                android:src="@drawable/power" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="Iphone 13 pro max"
+                android:text="Power bank"
                 android:textSize="15dp"
                 android:textStyle="bold"
                 android:textColor="#111"/>
@@ -138,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="3000"
+                    android:text="300"
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:textColor="@color/warm_blue"/>
@@ -171,7 +166,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="-10dp"
                 android:gravity="center_horizontal"
                 app:tint="@color/warm_red"
                 android:src="@drawable/outline_delete_24" />
@@ -181,6 +176,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_height="100dp"
         >
         <LinearLayout
@@ -191,12 +188,12 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="80dp"
-                android:src="@drawable/iph_13" />
+                android:src="@drawable/airpods" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="Iphone 13 pro max"
+                android:text="Air pods"
                 android:textSize="15dp"
                 android:textStyle="bold"
                 android:textColor="#111"/>
@@ -211,7 +208,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="3000"
+                    android:text="240"
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:textColor="@color/warm_blue"/>
@@ -244,7 +241,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="-10dp"
                 android:gravity="center_horizontal"
                 app:tint="@color/warm_red"
                 android:src="@drawable/outline_delete_24" />
@@ -254,6 +251,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_height="100dp"
         >
         <LinearLayout
@@ -264,12 +263,12 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="80dp"
-                android:src="@drawable/iph_13" />
+                android:src="@drawable/charge" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="Iphone 13 pro max"
+                android:text="Charge  25wt"
                 android:textSize="15dp"
                 android:textStyle="bold"
                 android:textColor="#111"/>
@@ -284,7 +283,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="3000"
+                    android:text="90"
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:textColor="@color/warm_blue"/>
@@ -317,7 +316,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="-10dp"
                 android:gravity="center_horizontal"
                 app:tint="@color/warm_red"
                 android:src="@drawable/outline_delete_24" />
@@ -329,38 +328,45 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_height="150dp"
 
         >
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:background="#eee"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#eee">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Total :"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="#111"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="50dp"/>
+                android:text="Total :"
+                android:textColor="#111"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5000 SAR"
-                android:textSize="16dp"
+                android:layout_marginLeft="170dp"
                 android:layout_marginTop="30dp"
-                android:textStyle="bold"
+                android:text="3630 SAR"
                 android:textColor="@color/warm_red"
-                android:layout_marginLeft="170dp"/>
+                android:textSize="16dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
-            <Button
+        <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Checkout"
+            android:onClick="goToPayment"
+                android:backgroundTint="@color/warm_red"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_gravity="bottom"/>

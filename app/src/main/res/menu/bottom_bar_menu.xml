@@ -3,16 +3,18 @@
     <item
         android:id="@+id/home"
         android:title="Home"
-        android:onClick="contc"
+        android:onClick="goToHome"
         android:icon="@drawable/outline_home_24"/>
     <item
         android:id="@+id/order"
+        android:onClick="myOrder"
         android:title="Order"
         android:icon="@drawable/outline_shopping_bag_24"/>
     <item
         android:id="@+id/cart"
+        android:onClick="myCart"
         android:title="Cart"
-        android:onClick="gotocart"
+
         android:icon="@drawable/outline_shopping_cart_24"/>
     <item
         android:id="@+id/profile"

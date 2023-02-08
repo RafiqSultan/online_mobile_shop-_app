@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#E5E0FF"
-    tools:context=".HomeActivity">
+    tools:context=".Cat_iphoneActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -102,7 +101,8 @@
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@color/warm_red"
+                    android:onClick="goToAll"
+                    app:cardBackgroundColor="@color/warm_blue"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="10dp">
 
@@ -120,7 +120,7 @@
                     android:layout_width="90dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="#293462"
+                    app:cardBackgroundColor="@color/warm_red"
                     app:cardCornerRadius="10dp"
                     android:onClick="goToIphoneCat"
                     app:cardElevation="10dp">
@@ -247,7 +247,6 @@
                             android:layout_width="150dp"
                             android:layout_height="120dp"
                             android:elevation="20dp"
-                            android:onClick="showDetails"
                             android:src="@drawable/iph_13"
                             tools:ignore="MissingConstraints" />
 
@@ -277,7 +276,6 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="center_horizontal"
                                     android:text="Iphone 13 Pro "
-                                    android:onClick="showDetails"
                                     android:textColor="#222"
                                     android:textSize="18dp"
                                     android:textStyle="bold" />
@@ -414,7 +412,7 @@
                             android:layout_width="150dp"
                             android:layout_height="120dp"
                             android:elevation="20dp"
-                            android:src="@drawable/s21"
+                            android:src="@drawable/iph_8"
                             tools:ignore="MissingConstraints" />
 
                         <androidx.cardview.widget.CardView
@@ -442,7 +440,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center_horizontal"
-                                    android:text="Samsung s21"
+                                    android:text="Iphone 8"
                                     android:textColor="#222"
                                     android:textSize="18dp"
                                     android:textStyle="bold" />
@@ -458,7 +456,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="30dp"
                                         android:layout_marginLeft="40dp"
-                                        android:text="2700 SAR"
+                                        android:text="1800 SAR"
                                         android:textColor="@color/warm_red"
                                         android:textSize="16dp" />
 
@@ -491,7 +489,7 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:elevation="20dp"
-                            android:src="@drawable/airpods"
+                            android:src="@drawable/iph_7plus"
                             tools:ignore="MissingConstraints" />
 
                         <androidx.cardview.widget.CardView
@@ -519,7 +517,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center_horizontal"
-                                    android:text="Air pods"
+                                    android:text="Iphone 7plus"
                                     android:textColor="#222"
                                     android:textSize="18dp"
                                     android:textStyle="bold" />
@@ -535,7 +533,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="30dp"
                                         android:layout_marginLeft="40dp"
-                                        android:text="240 SAR"
+                                        android:text="1600 SAR"
                                         android:textColor="@color/warm_red"
                                         android:textSize="16dp" />
 
@@ -578,7 +576,7 @@
                             android:layout_width="150dp"
                             android:layout_height="120dp"
                             android:elevation="20dp"
-                            android:src="@drawable/power"
+                            android:src="@drawable/iph_8"
                             tools:ignore="MissingConstraints" />
 
                         <androidx.cardview.widget.CardView
@@ -606,7 +604,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center_horizontal"
-                                    android:text="Power bank"
+                                    android:text="Iphone 8"
                                     android:textColor="#222"
                                     android:textSize="18dp"
                                     android:textStyle="bold" />
@@ -622,7 +620,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="30dp"
                                         android:layout_marginLeft="40dp"
-                                        android:text="300 SAR"
+                                        android:text="1800 SAR"
                                         android:textColor="@color/warm_red"
                                         android:textSize="16dp" />
 
@@ -653,9 +651,9 @@
 
                         <ImageView
                             android:layout_width="150dp"
-                            android:layout_height="120dp"
+                            android:layout_height="100dp"
                             android:elevation="20dp"
-                            android:src="@drawable/ipad_pro"
+                            android:src="@drawable/iph_7plus"
                             tools:ignore="MissingConstraints" />
 
                         <androidx.cardview.widget.CardView
@@ -683,7 +681,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center_horizontal"
-                                    android:text="Ipad Pto"
+                                    android:text="Iphone 7plus"
                                     android:textColor="#222"
                                     android:textSize="18dp"
                                     android:textStyle="bold" />
@@ -699,7 +697,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="30dp"
                                         android:layout_marginLeft="40dp"
-                                        android:text="1400 SAR"
+                                        android:text="1600 SAR"
                                         android:textColor="@color/warm_red"
                                         android:textSize="16dp" />
 
@@ -766,7 +764,6 @@
             app:tint="@color/white"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

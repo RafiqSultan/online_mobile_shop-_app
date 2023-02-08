@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#E5E0FF"
-    tools:context=".HomeActivity">
-
+    tools:context=".SamsungActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -102,7 +99,8 @@
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@color/warm_red"
+                    android:onClick="goToAll"
+                    app:cardBackgroundColor="@color/warm_blue"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="10dp">
 
@@ -120,7 +118,7 @@
                     android:layout_width="90dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="#293462"
+                    app:cardBackgroundColor="@color/warm_blue"
                     app:cardCornerRadius="10dp"
                     android:onClick="goToIphoneCat"
                     app:cardElevation="10dp">
@@ -139,7 +137,7 @@
                     android:layout_width="90dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="#293462"
+                    app:cardBackgroundColor="@color/warm_red"
                     android:onClick="goToSamsungCat"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="10dp">
@@ -247,8 +245,7 @@
                             android:layout_width="150dp"
                             android:layout_height="120dp"
                             android:elevation="20dp"
-                            android:onClick="showDetails"
-                            android:src="@drawable/iph_13"
+                            android:src="@drawable/s21"
                             tools:ignore="MissingConstraints" />
 
                         <androidx.cardview.widget.CardView
@@ -276,8 +273,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center_horizontal"
-                                    android:text="Iphone 13 Pro "
-                                    android:onClick="showDetails"
+                                    android:text="Samsung s21"
                                     android:textColor="#222"
                                     android:textSize="18dp"
                                     android:textStyle="bold" />
@@ -295,7 +291,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="30dp"
-                                        android:text="3000 SAR"
+                                        android:text="2700 SAR"
                                         android:textColor="@color/warm_red"
                                         android:textSize="16dp" />
 
@@ -327,7 +323,7 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:elevation="20dp"
-                            android:src="@drawable/iph_x"
+                            android:src="@drawable/n10"
                             tools:ignore="MissingConstraints" />
 
                         <androidx.cardview.widget.CardView
@@ -355,7 +351,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center_horizontal"
-                                    android:text="Iphone X"
+                                    android:text="Samsung Note 10+"
                                     android:textColor="#222"
                                     android:textSize="18dp"
                                     android:textStyle="bold" />
@@ -371,7 +367,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="30dp"
                                         android:layout_marginLeft="40dp"
-                                        android:text="2000 SAR"
+                                        android:text="2100 SAR"
                                         android:textColor="@color/warm_red"
                                         android:textSize="16dp" />
 
@@ -414,7 +410,7 @@
                             android:layout_width="150dp"
                             android:layout_height="120dp"
                             android:elevation="20dp"
-                            android:src="@drawable/s21"
+                            android:src="@drawable/sm_n8"
                             tools:ignore="MissingConstraints" />
 
                         <androidx.cardview.widget.CardView
@@ -442,248 +438,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center_horizontal"
-                                    android:text="Samsung s21"
-                                    android:textColor="#222"
-                                    android:textSize="18dp"
-                                    android:textStyle="bold" />
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center_horizontal"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="30dp"
-                                        android:layout_marginLeft="40dp"
-                                        android:text="2700 SAR"
-                                        android:textColor="@color/warm_red"
-                                        android:textSize="16dp" />
-
-                                    <ImageView
-
-                                        android:layout_width="50dp"
-                                        android:layout_height="50dp"
-                                        android:onClick="myCart"
-                                        android:layout_marginTop="20dp"
-                                        android:layout_marginLeft="-45dp"
-                                        android:src="@drawable/baseline_add_circle_24"
-
-                                        />
-
-
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="100dp"
-                            android:elevation="20dp"
-                            android:src="@drawable/airpods"
-                            tools:ignore="MissingConstraints" />
-
-                        <androidx.cardview.widget.CardView
-
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginEnd="20dp"
-                            app:cardBackgroundColor="#fff"
-                            app:cardCornerRadius="20dp"
-                            app:cardElevation="0dp"
-                            app:layout_constraintBaseline_toTopOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintEnd_toStartOf="parent"
-                            tools:layout_editor_absoluteY="50dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="60dp"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center_horizontal"
-                                    android:text="Air pods"
-                                    android:textColor="#222"
-                                    android:textSize="18dp"
-                                    android:textStyle="bold" />
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center_horizontal"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="30dp"
-                                        android:layout_marginLeft="40dp"
-                                        android:text="240 SAR"
-                                        android:textColor="@color/warm_red"
-                                        android:textSize="16dp" />
-
-                                    <ImageView
-
-                                        android:layout_width="50dp"
-                                        android:layout_height="50dp"
-                                        android:onClick="myCart"
-                                        android:layout_marginTop="20dp"
-                                        android:layout_marginLeft="-45dp"
-                                        android:src="@drawable/baseline_add_circle_24"
-
-                                        />
-
-
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginBottom="150dp"
-                    android:layout_marginRight="15dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="120dp"
-                            android:elevation="20dp"
-                            android:src="@drawable/power"
-                            tools:ignore="MissingConstraints" />
-
-                        <androidx.cardview.widget.CardView
-
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginEnd="20dp"
-                            app:cardBackgroundColor="#fff"
-                            app:cardCornerRadius="20dp"
-                            app:cardElevation="0dp"
-                            app:layout_constraintBaseline_toTopOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintEnd_toStartOf="parent"
-                            tools:layout_editor_absoluteY="50dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="60dp"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center_horizontal"
-                                    android:text="Power bank"
-                                    android:textColor="#222"
-                                    android:textSize="18dp"
-                                    android:textStyle="bold" />
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center_horizontal"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="30dp"
-                                        android:layout_marginLeft="40dp"
-                                        android:text="300 SAR"
-                                        android:textColor="@color/warm_red"
-                                        android:textSize="16dp" />
-
-                                    <ImageView
-
-                                        android:layout_width="50dp"
-                                        android:layout_height="50dp"
-                                        android:onClick="myCart"
-                                        android:layout_marginTop="20dp"
-                                        android:layout_marginLeft="-45dp"
-                                        android:src="@drawable/baseline_add_circle_24"
-
-                                        />
-
-
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="120dp"
-                            android:elevation="20dp"
-                            android:src="@drawable/ipad_pro"
-                            tools:ignore="MissingConstraints" />
-
-                        <androidx.cardview.widget.CardView
-
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginEnd="20dp"
-                            app:cardBackgroundColor="#fff"
-                            app:cardCornerRadius="20dp"
-                            app:cardElevation="0dp"
-                            app:layout_constraintBaseline_toTopOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintEnd_toStartOf="parent"
-                            tools:layout_editor_absoluteY="50dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="60dp"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center_horizontal"
-                                    android:text="Ipad Pto"
+                                    android:text="Samsung Note 8"
                                     android:textColor="#222"
                                     android:textSize="18dp"
                                     android:textStyle="bold" />
@@ -723,9 +478,250 @@
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:elevation="20dp"
+                            android:src="@drawable/s21"
+                            tools:ignore="MissingConstraints" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="20dp"
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintBaseline_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintEnd_toStartOf="parent"
+                            tools:layout_editor_absoluteY="50dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="60dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="S21 Ultra"
+                                    android:textColor="#222"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="30dp"
+                                        android:layout_marginLeft="40dp"
+                                        android:text="2800 SAR"
+                                        android:textColor="@color/warm_red"
+                                        android:textSize="16dp" />
+
+                                    <ImageView
+
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:onClick="myCart"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="-45dp"
+                                        android:src="@drawable/baseline_add_circle_24"
+
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:elevation="20dp"
+                            android:src="@drawable/sm_n8"
+                            tools:ignore="MissingConstraints" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="20dp"
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintBaseline_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintEnd_toStartOf="parent"
+                            tools:layout_editor_absoluteY="50dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="60dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="Samsung Note 8"
+                                    android:textColor="#222"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="30dp"
+                                        android:layout_marginLeft="40dp"
+                                        android:text="1400 SAR"
+                                        android:textColor="@color/warm_red"
+                                        android:textSize="16dp" />
+
+                                    <ImageView
+
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="-45dp"
+                                        android:src="@drawable/baseline_add_circle_24"
+
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:elevation="20dp"
+                            android:src="@drawable/s21"
+                            tools:ignore="MissingConstraints" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="20dp"
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintBaseline_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintEnd_toStartOf="parent"
+                            tools:layout_editor_absoluteY="50dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="60dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="S21 Ultra"
+                                    android:textColor="#222"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="30dp"
+                                        android:layout_marginLeft="40dp"
+                                        android:text="2800 SAR"
+                                        android:textColor="@color/warm_red"
+                                        android:textSize="16dp" />
+
+                                    <ImageView
+
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="-45dp"
+                                        android:src="@drawable/baseline_add_circle_24"
+
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
@@ -766,11 +762,4 @@
             app:tint="@color/white"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-

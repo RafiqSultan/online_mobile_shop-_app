@@ -4,49 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
     tools:context=".ContactusActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warm_red"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_bar"
+        app:title="Contact US"
+        app:titleTextColor="@color/white"/>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp">
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="15dp"
-            android:backgroundTint="#eee"
-
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1">
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/outline_arrow_circle_left_24"
-                app:tint="@color/warm_red"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="150dp"
-                android:textSize="18dp"
-                android:layout_marginTop="15dp"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:text="Contact US"/>
-
-        </androidx.cardview.widget.CardView>
-
-
-
-
-    </TableRow>
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="30dp"
@@ -66,7 +43,7 @@
                 android:layout_weight="1"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="1500"/>
+                android:text="343-TQM"/>
 
         </LinearLayout>
 
@@ -74,7 +51,9 @@
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,7 +74,7 @@
                 android:layout_weight="1"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="1500"/>
+                android:text="2149"/>
 
         </LinearLayout>
 
@@ -103,6 +82,8 @@
     <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
             android:layout_height="80dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,7 +115,9 @@
         </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_height="80dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -167,6 +150,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_height="80dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -199,6 +184,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_height="80dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -231,6 +218,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_height="80dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -261,7 +250,37 @@
 
     </androidx.cardview.widget.CardView>
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                app:menu="@menu/bottom_bar_menu" />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/warm_red"
+            android:src="@drawable/outline_home_24"
+            app:layout_anchor="@id/bottomBar"
+            app:tint="@color/white" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 </TableLayout>

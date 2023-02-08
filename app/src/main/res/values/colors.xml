@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#8692f7</color>
     <color name="warm_blue">#293462</color>
+    <color name="black_alpha">#702d88df</color>
     <color name="warm_light">#1cd6ce</color>
     <color name="warm_red">#d61c4e</color>
     <color name="warm_yellow">#fedb39</color>

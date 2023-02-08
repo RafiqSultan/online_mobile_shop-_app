@@ -7,21 +7,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class ContactusActivity extends AppCompatActivity {
+public class DetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contactus);
+        setContentView(R.layout.activity_details);
         androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar); setSupportActionBar(toolbar);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_bar,menu);
         return super.onCreateOptionsMenu(menu);
-
-
     }
 
 
@@ -45,22 +45,9 @@ public class ContactusActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-    public void showProfile(MenuItem item) {
-        Intent intent = new Intent(getApplicationContext(),ProfileActivity.class);
-        startActivity(intent);
-    }
-    public void myCart(MenuItem item) {
-        Intent intent = new Intent(getApplicationContext(),CartActivity.class);
-        startActivity(intent);
-    }
-    public void myOrder(MenuItem item) {
-        Intent intent = new Intent(getApplicationContext(),MyOrderActivity.class);
-        startActivity(intent);
-    }
 
-    public void goToHome(MenuItem item) {
-        Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
+    public void AddToCart(View view) {
+        Intent intent=new Intent(getApplicationContext(),CartActivity.class);
         startActivity(intent);
     }
-
 }

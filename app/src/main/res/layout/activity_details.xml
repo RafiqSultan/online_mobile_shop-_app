@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warm_red"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_bar"
+        app:title="Details"
+        app:titleTextColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="314dp"
+        android:layout_height="280dp"
+        android:src="@drawable/iph_13"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="47dp"
+        android:background="@color/black_alpha"
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:text="Iphone 13 Pro Max"
+        android:textColor="@color/warm_red"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="96dp"
+        android:text="3000"
+        android:textColor="@color/warm_blue"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="418dp"
+        android:textColor="#111"
+        android:text="RAM:"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="418dp"
+        android:text="6 GB"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="418dp"
+        android:text="Storage:"
+        android:textColor="#111"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="418dp"
+        android:text="128/256/512 GB"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="418dp"
+        android:text="Battary:"
+        android:textColor="#111"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="418dp"
+        android:text="3125 MA"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="-113dp"
+        android:onClick="AddToCart"
+        android:layout_marginBottom="482dp"
+        android:backgroundTint="@color/warm_red"
+        android:text="Add To Cart" />
+
+
+</RelativeLayout>
